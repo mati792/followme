@@ -4,6 +4,13 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+.status{
+  border: 1px solid grey;
+  width: 360px;
+  height: 80px;
+}
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -3979,11 +3986,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li {
   position: relative;
   display: block;
+  
 }
 .nav > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
+  
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4168,6 +4177,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+ 
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4180,6 +4190,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
+  
   padding-right: 15px;
   padding-left: 15px;
   overflow-x: visible;
@@ -4591,6 +4602,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse {
   background-color: #222;
   border-color: #080808;
+ 
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
