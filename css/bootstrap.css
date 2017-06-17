@@ -8,7 +8,7 @@
 .status{
   border: 1px solid grey;
   width: 360px;
-  height: 80px;
+  min-height: 80px;
 }
 
 html {
@@ -3008,7 +3008,8 @@ select[multiple].input-lg {
   }
 }
 .btn {
-  display: inline-block;
+
+  float: right;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
@@ -3016,7 +3017,7 @@ select[multiple].input-lg {
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   cursor: pointer;
@@ -3026,7 +3027,7 @@ select[multiple].input-lg {
           user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 15px;
 }
 .btn:focus,
 .btn:active:focus,
@@ -3121,27 +3122,27 @@ fieldset[disabled] .btn-default.focus {
   background-color: #333;
 }
 .btn-primary {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  color: #286090;
+  background-color: white;
+  border-color: #286090;
 }
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  color: #286090;
+  background-color: lightgrey;
+  border-color: #111d77;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: #286090;
-  border-color: #204d74;
+  border-color: #111d77;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #111d77;
+  border-color: #111d77;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3153,7 +3154,7 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
-  background-color: #204d74;
+  background-color: #111d77;
   border-color: #122b40;
 }
 .btn-primary:active,
@@ -3170,11 +3171,11 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
+  background-color: #111d77;
   border-color: #2e6da4;
 }
 .btn-primary .badge {
-  color: #337ab7;
+  color: #111d77;
   background-color: #fff;
 }
 .btn-success {
@@ -3443,21 +3444,21 @@ fieldset[disabled] .btn-link:focus {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px;
+  border-radius: 16px;
 }
 .btn-sm,
 .btn-group-sm > .btn {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 13px;
 }
 .btn-xs,
 .btn-group-xs > .btn {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px;
+  border-radius: 13px;
 }
 .btn-block {
   display: block;
@@ -3658,7 +3659,7 @@ tbody.collapse.in {
 .btn-group > .btn,
 .btn-group-vertical > .btn {
   position: relative;
-  float: left;
+  float: right;
 }
 .btn-group > .btn:hover,
 .btn-group-vertical > .btn:hover,

@@ -94,8 +94,10 @@
                 <img class="img-responsive" src="http://placehold.it/900x300" alt="">
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-                <button type="button" class="glyphicon glyphicon-comment"  style="height:33px; width:50px; color:#337ab7" onclick="displayComment()"></button>
-                <a class="btn btn-primary" href="#">Więcej <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <button type="button" class="glyphicon glyphicon-comment"  style=" border-radius: 15px; height:33px; width:50px; color:#6898f2" onclick="displayComment()"></button>
+                <button type="button" class="glyphicon glyphicon-thumbs-up" style=" border-radius: 15px; height:33px; width:50px; color:#6898f2" onclick="like()"></button>
+                <button type="button" class="glyphicon glyphicon-thumbs-down" style=" border-radius: 15px; height:33px; width:50px; color:#6898f2" onclick="dislike()"></button>
+                <a class="btn btn-primary" href="#" style="float: right; border: none; border-radius: 15px; background-color: white; color: #286090;">Więcej <span class="glyphicon glyphicon-chevron-right"></span></a>
                 
 <div class="container" style="display:none;" id="commentDiv">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -179,42 +181,9 @@
 	</div>
 </div>
 
-                <hr>
-
-                <!-- Second Blog Post -->
-                <h2>
-                    <a href="#">Tytuł 2</a>
-                </h2>
-                <p class="lead">
-                     <a href="index.php">Autor 2</a>
-                </p>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
-                <hr>
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!</p>
-                <a class="btn btn-primary" href="#">Więcej <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-                <hr>
-
-                <!-- Third Blog Post -->
-                <h2>
-                    <a href="#">Tytuł 3</a>
-                </h2>
-                <p class="lead">
-                     <a href="index.php">Autor 3</a>
-                </p>
-                <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
-                <hr>
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates, voluptas dolore ipsam cumque quam veniam accusantium laudantium adipisci architecto itaque dicta aperiam maiores provident id incidunt autem. Magni, ratione.</p>
-                <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
-                <hr>
 
                 <!-- Pager -->
-                <ul class="pager">
+                <ul class="pager" style="padding-top: 20px;">
                     <li class="previous">
                         <a href="#">&larr; Starsze</a>
                     </li>
@@ -280,7 +249,9 @@
                 <div class="well">
                     <h4>Napisz post</h4>
                     <div class="status">
-                        <p style="border: 1px solid #ccc; padding: 10px;"> My first status </p>
+                        <input class="col-md-6" type="text" name="status" style="padding-bottom: 5px; width: 100%; min-height: 50px; border-radius: 3px; border: 1px solid #e3e3e3;"><br/><br/><br/>
+                        <a href="#" style="color: #333"><span class="glyphicon glyphicon-picture"></span></a>
+                        <button type="submit" name="send" style="float: right; padding: 5px; border-radius: 3px; border: 1px solid #e3e3e3;  background-color: white; color: #286090;"> Opublikuj </button>
                     </div>
                 </div>
 
